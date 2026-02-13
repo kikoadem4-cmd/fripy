@@ -565,4 +565,16 @@ body {
     position: relative;
     z-index: 2;
 }
+.logo a {
+    display: inline-block;
+}
+
+.logo img {
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.logo img:hover {
+    transform: scale(1.1) rotate(-3deg);
+}
 
