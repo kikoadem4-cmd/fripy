@@ -448,65 +448,7 @@ body.light-mode .category-card {
     transform: scale(1.1);
 }
 
-/* ================================= */
-/* INSANE BACKGROUND ORBS */
-/* ================================= */
 
-.background-animation {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
-    top: 0;
-    left: 0;
-}
-
-.background-animation span {
-    position: absolute;
-    display: block;
-    border-radius: 50%;
-    animation: float 20s linear infinite;
-    opacity: 0.15;
-}
-
-.background-animation span:nth-child(1) {
-    width: 300px;
-    height: 300px;
-    background: #8a2be2;
-    left: 10%;
-    top: 20%;
-}
-
-.background-animation span:nth-child(2) {
-    width: 400px;
-    height: 400px;
-    background: #00ff66;
-    left: 70%;
-    top: 50%;
-}
-
-.background-animation span:nth-child(3) {
-    width: 250px;
-    height: 250px;
-    background: #8a2be2;
-    left: 40%;
-    top: 80%;
-}
-
-.background-animation span:nth-child(4) {
-    width: 350px;
-    height: 350px;
-    background: #00ff66;
-    left: 80%;
-    top: 10%;
-}
-
-@keyframes float {
-    0% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-100px) rotate(180deg); }
-    100% { transform: translateY(0px) rotate(360deg); }
-}
 .card,
 .category-card {
     position: relative;
@@ -515,7 +457,6 @@ body.light-mode .category-card {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(15px);
     overflow: hidden;
-    transition: 0.4s ease;
 }
 
 .card::before,
@@ -552,9 +493,7 @@ body.light-mode .category-card {
 .main-btn:hover::after {
     left: 150%;
 }
-body {
-    animation: pageFade 0.8s ease;
-}
+
 
 @keyframes pageFade {
     from { opacity: 0; }
@@ -577,4 +516,54 @@ body {
 .logo img:hover {
     transform: scale(1.1) rotate(-3deg);
 }
+/* ============================= */
+/* FINAL REVEAL CONTROL */
+/* ============================= */
 
+.card,
+.category-card {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 12.5s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 2.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card.show,
+.category-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ============================= */
+/* ANIMATED MOVING GRADIENT */
+/* ============================= */
+
+body {
+    background: linear-gradient(
+        -45deg,
+        #0f0f1a,
+        #2b0040,
+        #001a0f,
+        #111111
+    );
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 100%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 0%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

@@ -24,12 +24,11 @@ if (themeToggle) {
 }
 
 // ==========================
-// SCROLL REVEAL ANIMATION
+// SCROLL REVEAL ANIMATION (FIXED)
 // ==========================
-
 const revealElements = document.querySelectorAll(".card, .category-card");
 
-window.addEventListener("scroll", () => {
+function revealOnScroll() {
     revealElements.forEach(el => {
         const elementTop = el.getBoundingClientRect().top;
         const windowHeight = window.innerHeight;
@@ -38,7 +37,11 @@ window.addEventListener("scroll", () => {
             el.classList.add("show");
         }
     });
-});
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
+
 
 // ==========================
 // 3D TILT EFFECT
