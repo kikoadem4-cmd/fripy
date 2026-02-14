@@ -5,46 +5,81 @@
     <title>Retail | Fripy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="header">
-    <div class="logo">
-        <a href="index.html">
-        <img src="../photos/fripy icon.png" alt="Fripy Logo">
-    </a>
-   </div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <div class="noise"></div>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="customers.html">Customers</a></li>
-            <li><a href="sellers.html">Sellers</a></li>
-            <li><a href="gros.html">Wholesale</a></li>
-            <li><a href="details.html" class="active">Retail</a></li>
-        </ul>
-    </nav>
-</header>
+    <header class="header" id="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../photos/fripy icon.png" alt="Fripy Logo" class="logo-img">
+            </a>
+        </div>
+        <div class="menu-toggle" id="menuToggle"><span></span><span></span></div>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="customers.html">Customers</a></li>
+                <li><a href="sellers.html">Sellers</a></li>
+                <li><a href="gros.html">Wholesale</a></li>
+                <li><a href="details.html" class="active">Retail</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="#" class="nav-link-btn">Login</a>
+            <a href="#" class="nav-cta">Register</a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><span class="toggle-icon">◑</span></button>
+        </div>
+    </header>
 
-<section class="page-hero">
-    <h1>Retail Shopping 🛍️</h1>
-    <p>Buy single products quickly and easily.</p>
-</section>
+    <section class="page-hero">
+        <div class="page-hero-tag reveal-up">Retail</div>
+        <h1 class="page-hero-title reveal-up" style="animation-delay:.1s">Single Items,<br><em>Instantly.</em></h1>
+        <p class="page-hero-sub reveal-up" style="animation-delay:.2s">Buy what you need, when you need it — delivered fast.</p>
+        <div class="page-hero-line reveal-up" style="animation-delay:.3s"></div>
+    </section>
 
-<section class="content-section">
-    <div class="card">
-        <h3>Daily Deals</h3>
-        <p>Special offers updated every day.</p>
-    </div>
+    <section class="content-section">
 
-    <div class="card">
-        <h3>Fast Delivery</h3>
-        <p>Quick shipping to your location.</p>
-    </div>
-</section>
+        <div class="feature-card scroll-reveal">
+            <div class="feature-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3>Daily Deals</h3>
+            <p>Curated offers refreshed every 24 hours — never miss a bargain.</p>
+        </div>
 
+        <div class="feature-card scroll-reveal" style="animation-delay:.1s">
+            <div class="feature-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h3>Fast Delivery</h3>
+            <p>Express and same-day shipping options available at checkout.</p>
+        </div>
 
+        <div class="feature-card scroll-reveal" style="animation-delay:.2s">
+            <div class="feature-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <h3>Easy Returns</h3>
+            <p>Hassle-free 30-day returns on all retail purchases, guaranteed.</p>
+        </div>
 
-<script src="../js/script.js"></script>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand"><img src="../photos/fripy icon.png" alt="Fripy" class="footer-logo-img"></div>
+            <p class="footer-copy">© 2026 Fripy. All rights reserved.</p>
+            <div class="footer-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="support.html">Support</a></div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>

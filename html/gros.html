@@ -5,49 +5,81 @@
     <title>Wholesale | Fripy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <div class="noise"></div>
 
+    <header class="header" id="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../photos/fripy icon.png" alt="Fripy Logo" class="logo-img">
+            </a>
+        </div>
+        <div class="menu-toggle" id="menuToggle"><span></span><span></span></div>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="customers.html">Customers</a></li>
+                <li><a href="sellers.html">Sellers</a></li>
+                <li><a href="gros.html" class="active">Wholesale</a></li>
+                <li><a href="details.html">Retail</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="#" class="nav-link-btn">Login</a>
+            <a href="#" class="nav-cta">Register</a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><span class="toggle-icon">◑</span></button>
+        </div>
+    </header>
 
+    <section class="page-hero">
+        <div class="page-hero-tag reveal-up">Wholesale</div>
+        <h1 class="page-hero-title reveal-up" style="animation-delay:.1s">Buy in Bulk,<br><em>Save More.</em></h1>
+        <p class="page-hero-sub reveal-up" style="animation-delay:.2s">Premium pricing for large-scale orders with dedicated account support.</p>
+        <div class="page-hero-line reveal-up" style="animation-delay:.3s"></div>
+    </section>
 
-<header class="header">
-    <div class="logo">
-        <a href="index.html">
-            <img src="../photos/fripy icon.png" alt="Fripy Logo">
-        </a>
-    </div>
+    <section class="content-section">
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="customers.html">Customers</a></li>
-            <li><a href="sellers.html">Sellers</a></li>
-            <li><a href="gros.html" class="active">Wholesale</a></li>
-            <li><a href="details.html">Retail</a></li>
-        </ul>
-    </nav>
-</header>
+        <div class="feature-card scroll-reveal">
+            <div class="feature-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            </div>
+            <h3>Bulk Discounts</h3>
+            <p>Exclusive pricing tiers that scale with your order volume.</p>
+        </div>
 
-<section class="page-hero">
-    <h1>Wholesale Buying 📦</h1>
-    <p>Purchase large quantities at discounted prices.</p>
-</section>
+        <div class="feature-card scroll-reveal" style="animation-delay:.1s">
+            <div class="feature-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <h3>Business Accounts</h3>
+            <p>Dedicated manager, priority support, and custom invoicing.</p>
+        </div>
 
-<section class="content-section">
-    <div class="card">
-        <h3>Bulk Discounts</h3>
-        <p>Special pricing for big orders.</p>
-    </div>
+        <div class="feature-card scroll-reveal" style="animation-delay:.2s">
+            <div class="feature-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <h3>Fast Freight</h3>
+            <p>Reliable bulk shipping with real-time tracking and updates.</p>
+        </div>
 
-    <div class="card">
-        <h3>Business Accounts</h3>
-        <p>Dedicated support for businesses.</p>
-    </div>
-</section>
+    </section>
 
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand"><img src="../photos/fripy icon.png" alt="Fripy" class="footer-logo-img"></div>
+            <p class="footer-copy">© 2026 Fripy. All rights reserved.</p>
+            <div class="footer-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="support.html">Support</a></div>
+        </div>
+    </footer>
 
-
-<script src="../js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

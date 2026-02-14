@@ -5,53 +5,81 @@
     <title>Sellers | Fripy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <div class="noise"></div>
 
-<header class="header">
-    <div class="logo">
+    <header class="header" id="header">
+        <div class="logo">
             <a href="index.html">
-        <img src="../photos/fripy icon.png" alt="Fripy Logo">
-    </a>
-   </div>
+                <img src="../photos/fripy icon.png" alt="Fripy Logo" class="logo-img">
+            </a>
+        </div>
+        <div class="menu-toggle" id="menuToggle"><span></span><span></span></div>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="customers.html">Customers</a></li>
+                <li><a href="sellers.html" class="active">Sellers</a></li>
+                <li><a href="gros.html">Wholesale</a></li>
+                <li><a href="details.html">Retail</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="#" class="nav-link-btn">Login</a>
+            <a href="#" class="nav-cta">Register</a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><span class="toggle-icon">◑</span></button>
+        </div>
+    </header>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="customers.html">Customers</a></li>
-            <li><a href="sellers.html" class="active">Sellers</a></li>
-            <li><a href="gros.html">Wholesale</a></li>
-            <li><a href="details.html">Retail</a></li>
-        </ul>
-    </nav>
-</header>
+    <section class="page-hero">
+        <div class="page-hero-tag reveal-up">Sellers</div>
+        <h1 class="page-hero-title reveal-up" style="animation-delay:.1s">Grow Your<br><em>Business.</em></h1>
+        <p class="page-hero-sub reveal-up" style="animation-delay:.2s">Powerful tools to manage, sell, and scale your products globally.</p>
+        <div class="page-hero-line reveal-up" style="animation-delay:.3s"></div>
+    </section>
 
-<section class="page-hero">
-    <h1>Seller Dashboard 🚀</h1>
-    <p>Manage your products and grow your business.</p>
-</section>
+    <section class="content-section">
 
-<section class="content-section">
-    <div class="card">
-        <h3>Add Products</h3>
-        <p>Upload and manage your items.</p>
-    </div>
+        <div class="feature-card scroll-reveal">
+            <div class="feature-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <h3>Add Products</h3>
+            <p>Upload items with rich descriptions, images and pricing in seconds.</p>
+        </div>
 
-    <div class="card">
-        <h3>View Orders</h3>
-        <p>Track and manage customer orders.</p>
-    </div>
+        <div class="feature-card scroll-reveal" style="animation-delay:.1s">
+            <div class="feature-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+            </div>
+            <h3>View Orders</h3>
+            <p>Track every order in real time with detailed status and history.</p>
+        </div>
 
-    <div class="card">
-        <h3>Analytics</h3>
-        <p>Monitor your performance and sales.</p>
-    </div>
-</section>
+        <div class="feature-card scroll-reveal" style="animation-delay:.2s">
+            <div class="feature-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <h3>Analytics</h3>
+            <p>In-depth insights on sales, views, and conversion performance.</p>
+        </div>
 
+    </section>
 
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand"><img src="../photos/fripy icon.png" alt="Fripy" class="footer-logo-img"></div>
+            <p class="footer-copy">© 2026 Fripy. All rights reserved.</p>
+            <div class="footer-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="support.html">Support</a></div>
+        </div>
+    </footer>
 
-
-<script src="../js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
