@@ -47,6 +47,7 @@ body.light-mode {
   --text-3:    #6B5B87;
 }
 
+
 /* ── RESET ── */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -269,6 +270,9 @@ body.light-mode .theme-toggle:hover {
   color: var(--text-2);
   position: relative;
   transition: color var(--transition);
+}
+.navbar.light-mode{
+  
 }
 
 .navbar a::after {
@@ -1011,6 +1015,11 @@ body.light-mode .theme-toggle:hover {
     padding: 32px 5%;
     border-bottom: 1px solid var(--border);
   }
+  
+  body.light-mode .navbar {
+    background: rgba(250, 250, 248, 0.98);
+    border-bottom: 1px solid rgba(123, 34, 224, 0.15);
+  }
 
   .navbar.open { display: block; }
 
@@ -1024,6 +1033,10 @@ body.light-mode .theme-toggle:hover {
     padding: 12px 0;
     font-size: 0.85rem;
     border-bottom: 1px solid var(--border);
+  }
+  
+  body.light-mode .navbar a {
+    border-bottom: 1px solid rgba(123, 34, 224, 0.12);
   }
 
   .menu-toggle { display: flex; }
