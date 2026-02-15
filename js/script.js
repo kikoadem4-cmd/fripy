@@ -31,15 +31,15 @@
     // Scale cursor on hover
     document.querySelectorAll("a, button, .service-card, .feature-card").forEach((el) => {
       el.addEventListener("mouseenter", () => {
-        cursor.style.width  = "14px";
-        cursor.style.height = "14px";
+        cursor.style.width  = "30px";
+        cursor.style.height = "30px";
         follower.style.width  = "48px";
         follower.style.height = "48px";
         follower.style.borderColor = "rgba(123, 34, 224, 0.8)";
       });
       el.addEventListener("mouseleave", () => {
-        cursor.style.width  = "8px";
-        cursor.style.height = "8px";
+        cursor.style.width  = "35px";
+        cursor.style.height = "35px";
         follower.style.width  = "32px";
         follower.style.height = "32px";
         follower.style.borderColor = "rgba(123, 34, 224, 0.5)";
